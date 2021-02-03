@@ -6,8 +6,6 @@ info:
   title: Event Publisher API
   contact:
     email: atom_core_team@atos.net
-host: virtserver.swaggerhub.com
-basePath: /atom-synbaas/EventPublisherService/1.0.0
 tags:
 - name: admins
   description: Secured Admin-only calls
@@ -21,9 +19,7 @@ paths:
       tags:
       - developers
       summary: Event Publisher Service
-      description: |
-        By passing in the appropriate options, you can search for
-        available weather in the system
+      description: service description
       operationId: publishevent
       publish: Product
       consumes:
@@ -49,9 +45,7 @@ definitions:
     properties:
       topic:
         type: string
-        #format: uuid
         example: mytopic
       message:
         type: string
-        #format: uuid
         example: mymessage
